@@ -47,6 +47,10 @@ int UtPod::addSong(Song const &s){
     temp->s = s;
     int memoryLeft = getRemainingMemory() - s.getSize();
 
+    if(s.getSize() == 0){
+        return NO_MEMORY;
+    }
+
     if(memoryLeft > 0) {
         if (songs == NULL) {
             songs = temp;
