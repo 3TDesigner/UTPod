@@ -8,7 +8,7 @@ Song::Song(){
     size = 0;
 }
 
-Song::Song(string myArtist, string myTitle, int mySize){
+Song::Song(string myTitle, string myArtist, int mySize){
     artist = myArtist;
     title = myTitle;
     size = mySize;
